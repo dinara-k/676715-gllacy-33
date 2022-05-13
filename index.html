@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: GllacyShop</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
   </head>
   <body>
     <!-- Шапка -->
@@ -16,6 +16,27 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог</a>
+            <div class="navigation-catalog">
+              <ul class="navigation-catalog-item">
+                <li>
+                  <a class="navigation-catalog-link" href="#"><b>Новинки</b></a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-item">
+                <li>
+                  <a class="navigation-catalog-link" href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -26,24 +47,24 @@
         </ul>
         <div class="navigation-user">
           <div class="navigation-container">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="navigation-link phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <button class="navigation-button">
               <span class="visually-hidden">Поиск</span>
             </button>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <!-- <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search-field">Поиск по сайту</label>
               <input class="search-field" placeholder="Поиск по сайту" type="search" id="search-field" name="search-field" required>
               <button class="search-button" type="submit">Найти</button>
-            </form>
+            </form> -->
             <button class="navigation-button">
               <span class="visually-hidden">Вход</span>
             </button>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            </form>
+            <!-- <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            </form> -->
             <button class="navigation-button">
               <span class="visually-hidden">Пусто</span>
             </button>
-            <div>Ваша корзина пока пуста</div>
+            <!-- <div>Ваша корзина пока пуста</div> -->
           </div>
         </div>
       </nav>
@@ -60,9 +81,7 @@
               <div class="slider-left-wrapper">
                 <h2 class="main-title">Нежный пломбир с клубничным джемом</h2>
                 <p class="slide-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                <a class="button-main" href="#"> <!--button-main-disabled - неактивная кнопка -->
-                  <span>Заказать</span>
-                </a>
+                <a class="button-main" href="#">Заказать</a>
               </div>
               <div class="slider-center-wrapper">
                 <ul class="slider-images">

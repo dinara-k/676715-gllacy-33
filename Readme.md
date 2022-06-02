@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Динара Ходжаева](https://up.htmlacademy.ru/htmlcss/33/user/676715).
 * Наставник: `Неизвестно`.
 
 ---

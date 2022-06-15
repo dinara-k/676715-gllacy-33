@@ -125,7 +125,7 @@
                   <select class="select-control" aria-label="Сортировка" id="sorting" name="sorting">
                     <option value="popular">по популярности</option>
                     <option value="cheap">по возрастанию цены</option>
-                    <option value="cheap">по убыванию цены</option>
+                    <option value="expensive">по убыванию цены</option>
                   </select>
                 </fieldset>
                 <fieldset class="catalog-filter-group catalog-price">
@@ -427,7 +427,12 @@
             </li>
           </ul>
           <div class="pagination">
-            <button class="button-main button-white" type="button">Показать ещё</button>
+            <button class="button-main button-white" type="button">Показать ещё
+              <!-- Спиннер для кнопки -->
+              <!-- <svg class="button-spinner spinner-dark" viewBox="0 0 100 100" fill="none">
+                <circle class="spinner-circle" cx="50%" cy="50%" r="45" stroke="currentColor"/>
+              </svg> -->
+            </button>
             <!-- Пагинация -->
             <div class="pagination-container">
               <a class="main-link pagination-prev" href="#">

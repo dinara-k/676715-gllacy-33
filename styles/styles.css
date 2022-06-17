@@ -1849,6 +1849,13 @@ img {
 .navigation-button:hover + .popover {
   display: block;
   transition: 0.25s ease-in;
+  transition-delay: 0.175s;
+}
+
+.popover:hover {
+  display: block;
+  transition: 0.25s ease-in;
+  transition-delay: 0.175s;
 }
 
 .popover-content {

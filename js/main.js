@@ -1,5 +1,5 @@
 (() => {
-  const buttons = document.querySelectorAll('slider-pagination-button'); //находим все кнопки, с которыми будем взаимодействовать, передав css-селектор в метод
+  const buttons = document.querySelectorAll('.slider-pagination-button'); //находим все кнопки, с которыми будем взаимодействовать, передав css-селектор в метод
   const body = document.querySelector('body');
 
   if (!buttons.length) return; //если на странице нет кнопок, останавливаем выполнение скрипта, чтобы не было ошибки

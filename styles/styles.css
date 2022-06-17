@@ -1151,10 +1151,6 @@ img {
   fill: var(--extra-dark);
 }
 
-.tooltip-toogle:hover svg {
-  fill: rgba(var(--extra-dark-rgb), 0.3);
-}
-
 .tooltip-text {
   position: absolute;
   top: -100%;
@@ -1180,7 +1176,7 @@ img {
   bottom: 0;
   width: 7px;
   height: 14px;
-  margin-top: auto;
+  margin-top: 11px;
   margin-bottom: auto;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
@@ -1849,10 +1845,8 @@ img {
   text-align: center;
 }
 
-.navigation-link:focus-within + .popover,
-.navigation-link:active + .popover,
-.navigation-button:focus-within + .popover,
-.navigation-button:active + .popover {
+.navigation-link:hover + .popover,
+.navigation-button:hover + .popover {
   display: block;
   transition: 0.25s ease-in;
 }

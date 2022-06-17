@@ -1819,7 +1819,10 @@ img {
   top: 40px;
   right: 0;
   z-index: 3;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.155s ease-in-out;
+  transition-delay: 0.125s;
   padding: 49px 50px 48px 48px;
   color: var(--extra-dark);
   background-color: var(--extra-light);
@@ -1845,17 +1848,33 @@ img {
   text-align: center;
 }
 
-.navigation-link:hover + .popover,
-.navigation-button:hover + .popover {
+.popover-trigger::after {
+  content: "";
+
+  position: absolute;
+  top: 100%;
   display: block;
-  transition: 0.25s ease-in;
-  transition-delay: 0.175s;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.popover-trigger:hover + .popover {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.155s ease-in-out;
+  transition-delay: 0.425s;
+}
+
+.popover-trigger:hover::after {
+  pointer-events: all;
 }
 
 .popover:hover {
-  display: block;
-  transition: 0.25s ease-in;
-  transition-delay: 0.175s;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .popover-content {

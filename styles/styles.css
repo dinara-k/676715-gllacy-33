@@ -1863,18 +1863,18 @@ img {
 
 .popover-trigger:hover + .popover {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
   transition: 0.155s ease-in-out;
   transition-delay: 0.425s;
 }
 
 .popover-trigger:hover::after {
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 .popover:hover {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 .popover-content {
@@ -1883,6 +1883,7 @@ img {
 
 .popover .title-h3,
 .modal-content .title-h3 {
+  display: block;
   margin-bottom: 31px;
 }
 
@@ -2044,6 +2045,14 @@ img {
 
 .popover-search .field {
   width: 322px;
+  padding: 13px 31px 13px 16px;
+}
+
+.popover-search .field::-webkit-search-decoration,
+.popover-search .field::-webkit-search-cancel-button,
+.popover-search .field::-webkit-search-results-button,
+.popover-search .field::-webkit-search-results-decoration {
+  display: none;
 }
 
 .search-reset {
